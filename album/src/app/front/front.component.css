@@ -1,0 +1,27 @@
+.background{
+    background:url(../../assets/img/bg1.jpg) no-repeat center center fixed;
+   min-height:100vh;
+    width:100%;
+    background-size:cover;
+}
+
+.center-div{
+    background:url('../../assets/img/pic11.png');
+    background-size: cover;
+    height:400px;
+    width:400px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.center-div h2{
+    color:#fff;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-size:40px;
+   
+}
+
+.center-div h2 span{
+    font-weight:bolder;
+}
