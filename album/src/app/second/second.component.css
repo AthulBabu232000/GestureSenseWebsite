@@ -1,0 +1,33 @@
+.first-col{
+    height: 100vh;
+    display:flex;
+    position:relative;
+    flex-direction:column;
+}
+
+.first-col-first-row{
+    width:100%;
+    flex-basis:60%;
+    
+}
+.box1,.box2{
+    height:200px;
+    width:200px;
+    background-color:olive;
+}
+.box2{
+    float:right;
+}
+.first-col-second-row{
+    width:100%;
+    flex-basis:40%;
+   display:flex;
+ align-items: end;
+ padding:10px;
+}
+
+.second-col{
+    background-image:url(../../assets/img/pic21.png);
+    background-repeat:no-repeat;
+    background-position:right center;
+}
