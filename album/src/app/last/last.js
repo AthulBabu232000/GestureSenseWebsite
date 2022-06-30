@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="styles.css">
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
 
-<title>Album</title>
-</head>
-<body>
-
-  <app-root></app-root>
-  <div class="container-fluid px-5 py-3">
-    <div class="fund" id="fund" style="height:200px; width:200px;background-color:yellow">
-
-    </div>
-    <div class="container" id="js-container">
-        <canvas class="canvas" id="js-canvas" width="300" height="300"></canvas>
-       
-      </div>
- </div>
-       
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script>
-  
 alert("its working guys")
 (function() {
   
@@ -148,7 +113,3 @@ alert("its working guys")
   }
   
 })();
-</script>
-
-</body>
-</html>

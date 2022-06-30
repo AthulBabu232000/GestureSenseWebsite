@@ -8,6 +8,7 @@ import { ThirdComponent } from './third/third.component';
 import { FourthComponent } from './fourth/fourth.component';
 import { SwiperComponent } from './swiper/swiper.component';
 import { CommonModule } from '@angular/common';
+import { LastComponent } from './last/last.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CommonModule } from '@angular/common';
     SecondComponent,
     ThirdComponent,
     FourthComponent,
-    SwiperComponent
+    SwiperComponent,
+    LastComponent
   ],
   imports: [
     BrowserModule,
