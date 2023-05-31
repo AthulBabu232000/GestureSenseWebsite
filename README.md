@@ -1,2 +1,1 @@
-# sujith-album
-album 
+ng build --prod --base-href=/your-repo-name/
