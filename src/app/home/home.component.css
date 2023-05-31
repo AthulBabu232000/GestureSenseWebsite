@@ -49,6 +49,11 @@ body{
     transition:all;
     transition-duration:0.2s;
     font-weight:bolder;
+    animation-name: btnAnimation;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+
 
 }
 .btn:hover,.btn:hover>.header {
@@ -56,4 +61,12 @@ body{
     color:orangered;
     background-color:#FFF;
 
+}
+
+@keyframes btnAnimation{
+    from{
+        transform:rotate(0deg);
+    }to{
+        transform:rotate(360deg);
+    }
 }
