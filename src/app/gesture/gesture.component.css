@@ -12,11 +12,12 @@ body{
 
 }
 .header{
-    background-color: rebeccapurple;
+    background-color: orangered;
     padding:10px 0;
     color:#FFF;
     width:100%;
 }
+
 .container-fluid{
     margin:0 !important;
     padding: 0;
@@ -43,7 +44,7 @@ img{
 
 }
 .btn{
-    background-color: rebeccapurple;
+    background-color: orangered;
     color:#FFF;
     width:200px;
     height:50px;
