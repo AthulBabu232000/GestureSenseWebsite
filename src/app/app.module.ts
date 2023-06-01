@@ -4,6 +4,8 @@ import { RouterModule,Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { GestureComponent } from './gesture/gesture.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DisplayerComponent } from './displayer/displayer.component';
 
 const routes:Routes=[
  
@@ -15,17 +17,22 @@ const routes:Routes=[
   {
     path:'gesture/:gestureNumber',
     component:GestureComponent
-  }
+  },
+  {path:'displayer',
+component:DisplayerComponent
+},
 ]
 @NgModule({
   declarations: [
     AppComponent,
     GestureComponent,
-    HomeComponent
+    HomeComponent,
+    DisplayerComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

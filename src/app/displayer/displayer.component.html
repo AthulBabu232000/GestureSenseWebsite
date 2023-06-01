@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Displayer Page</title>
+</head>
+<body>
+    <div class="container-fluid">
+<div class="header">
+<h1 class="mx-auto text-center">All Gestures</h1>
+</div>
+        <div class="img-container">
+          <div class="row mx-auto">
+            <div class="col-md-3 card" *ngFor="let imgId of imgIds;">
+                <div class="card-body">
+                    <h5 class="card-title">{{imgNames[imgId]}}{{imgId}}</h5>
+                    <p class="card-text">This finger shows the image of a finger</p>
+                    <img class="img-fluid img-responsive w-25" src="{{imgSrcs[imgId]}}" alt="" srcset="">
+                </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
