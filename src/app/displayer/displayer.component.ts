@@ -13,11 +13,16 @@ export class DisplayerComponent implements OnInit {
 
   constructor(private gestureService: GestureService) {
   
-    this.allValues = this.gestureService.fetchAllValuesAsList();
+   
     
   }
-
   ngOnInit(): void {
+    this.allValues = this.gestureService.fetchAllValuesAsList();
+
+  }
+
+  ngAfterViewInit(): void {
+
     for (var key in this.allValues) {
       if (this.allValues.hasOwnProperty(key)) {
         var obj = this.allValues[key];
