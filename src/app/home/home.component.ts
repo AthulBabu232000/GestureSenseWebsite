@@ -33,7 +33,7 @@ for(var i in this.listOfGesture){
 
   }
   ngOnInit(): void {
-  this.gestureService.fetchData();
-  this.gestureService.fetchAllValues()
+  // this.gestureService.fetchData();
+  // this.gestureService.fetchAllValues()
 }
 }
