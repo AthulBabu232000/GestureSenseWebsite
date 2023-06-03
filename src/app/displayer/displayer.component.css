@@ -8,8 +8,14 @@ body{
     min-height:100vh;
     width:100%;
     overflow-x:hidden;
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: 'Playfair Display', serif;
+    /* font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
 
+}
+.row{
+    gap:10px;
+    /* justify-content: center; */
+    padding:5px;
 }
 .header{
     background-color: orangered;
@@ -27,4 +33,14 @@ body{
     gap: 50px;
 
 }
+.card{
+    border:2px solid orangered;
+    border-radius:10px;
+}
+.card-title{
+    color:orangered;
+    font-weight:bolder;
+
+}
+
 
