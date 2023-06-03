@@ -20,7 +20,6 @@ export class GestureComponent implements OnInit {
  }
  GoDisplayer(){
   this.router.navigate(['displayer']);
-  this.gestureService.fetchAllValues();
  }
  GoSave(){
   this.gestureService.saveData();

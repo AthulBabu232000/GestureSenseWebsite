@@ -19,9 +19,8 @@ export class DisplayerComponent implements OnInit {
     
   }
   ngOnInit(): void {
-  //  window.onbeforeunload=()=>{this.isReloaded=true;}
-    // console.log(this.isReloaded);
     if(this.allValues.length==0){
+    this.gestureService.fetchAllValues();
     this.allValues = this.gestureService.fetchAllValuesAsList();
     console.log("is this the one repeating");
       setTimeout(() => {
