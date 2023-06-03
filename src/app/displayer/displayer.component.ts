@@ -1,28 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { GestureService } from '../gesture.service';
+import {  Router } from '@angular/router';
 @Component({
   selector: 'app-displayer',
   templateUrl: './displayer.component.html',
   styleUrls: ['./displayer.component.css']
 })
 export class DisplayerComponent implements OnInit {
+  isReloaded:boolean=false;
   allValues: any[] = [];
   imgIds: number[] = [];
   imgSrcs: string[] = [];
   imgNames: string[] = [];
 
-  constructor(private gestureService: GestureService) {
+  constructor(private gestureService: GestureService,private router:Router) {
   
    
     
   }
   ngOnInit(): void {
+  //  window.onbeforeunload=()=>{this.isReloaded=true;}
+    // console.log(this.isReloaded);
+    if(this.allValues.length==0){
     this.allValues = this.gestureService.fetchAllValuesAsList();
-
-  }
-
-  ngAfterViewInit(): void {
-
+    console.log("is this the one repeating");
+      setTimeout(() => {
+        this.ngOnInit();
+      }, 500);
+    }
+    console.log(this.allValues);
     for (var key in this.allValues) {
       if (this.allValues.hasOwnProperty(key)) {
         var obj = this.allValues[key];
