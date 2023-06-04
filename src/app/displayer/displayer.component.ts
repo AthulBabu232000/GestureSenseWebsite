@@ -14,19 +14,20 @@ export class DisplayerComponent implements OnInit {
   imgNames: string[] = [];
 
   constructor(private gestureService: GestureService,private router:Router) {
+    
   
-   
     
   }
   ngOnInit(): void {
-    if(this.allValues.length==0){
     this.gestureService.fetchAllValues();
     this.allValues = this.gestureService.fetchAllValuesAsList();
-    console.log("is this the one repeating");
-      setTimeout(() => {
-        this.ngOnInit();
-      }, 500);
-    }
+    if(this.allValues.length==0){
+      
+      console.log("is this the one repeating");
+        setTimeout(() => {
+          this.ngOnInit();
+        }, 500);
+      }
     console.log(this.allValues);
     for (var key in this.allValues) {
       if (this.allValues.hasOwnProperty(key)) {
