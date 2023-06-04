@@ -10,15 +10,16 @@
 <title>Displayer Page</title>
 </head>
 <body>
-    <div class="container-fluid">
-<div class="header">
-<h1 class="mx-auto text-center">All Gestures</h1>
-</div>
+  <div class="header">
+    <h1 class="mx-auto text-center">All Gestures</h1>
+    </div>
+    <div class="container-fluid px-2">
+
         <div class="img-container">
       <div class="row">
         <div class="row justify-content-center">
         
-          <div class="col-md-3 card px-1" *ngFor="let imgId of imgIds">
+          <div class="col-md-3 card mx-2" *ngFor="let imgId of imgIds">
             <div class="card-body">
                 <h5 class="card-title">{{imgNames[imgId]}}</h5>
                 <p class="card-text">This finger shows the image of a finger</p>
