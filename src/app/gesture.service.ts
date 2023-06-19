@@ -43,7 +43,7 @@ fetchAllValuesAsList(){
   fetchData() {
     this.http
       .get<Gesture[]>(
-        'https://gesturesense-4c7d8-default-rtdb.firebaseio.com/athul.json'
+        'https://gesturesense-4c7d8-default-rtdb.firebaseio.com/gesture.json'
       )
       .pipe(
         tap((listOfGestures: Gesture[]) => {
